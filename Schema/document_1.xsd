@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="DOCUMENT">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CUSTOMER">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NAME">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="LAST_NAME" type="xs:string"/>
+                                        <xs:element name="FIRST_NAME" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DATE" type="xs:date"/>
+                            <xs:element name="ORDERS">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="ITEM">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="PRODUCT">
+                                                  <xs:complexType mixed="true">
+                                                    <xs:sequence>
+                                                        <xs:element name="PRODUCT_ID" type="xs:string"
+                                                    minOccurs="0"/>
+                                                    </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="NUMBER"/>
+                                                  <xs:element name="PRICE"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="class" type="xs:string"/>
+                                    <xs:attribute default="no" form="unqualified" name="discount"
+                                        use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:maxLength value="3"/>
+                                                <xs:minLength value="2"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="TYPE" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

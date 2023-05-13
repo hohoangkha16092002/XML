@@ -1,0 +1,23 @@
+<Race date="2020-12-31" name="New Years Meet">
+    <Cource>
+        <CourseName>The new track</CourseName>
+        <Address>Track Road 123</Address>
+    </Cource>
+    <Horses>
+        <Horse name="Bonfire">
+            <Value>5000</Value>
+            <DateOfBirth>2015-08-02</DateOfBirth>
+            <Gender>Male</Gender>
+        </Horse>
+        <Horse name="Faithfull Dobbin">
+            <Value>3500</Value>
+            <DateOfBirth>2017-05-31</DateOfBirth>
+            <Gender>Female</Gender>
+        </Horse>
+        <Horse name="Pegasus">
+            <Value>3000</Value>
+            <DateOfBirth>2016-06-23</DateOfBirth>
+            <Gender>Male</Gender>
+        </Horse>
+    </Horses>
+</Race>

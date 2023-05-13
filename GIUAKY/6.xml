@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhongBan>
+    <MaPhong>CNTT</MaPhong>
+    <TenPhong>Công Nghệ Thông Tin</TenPhong>
+    <NhanVien>
+        <MaNV>NV001</MaNV>
+        <HoTen>Hồ Hoàng Kha</HoTen>
+        <NgaySinh>2002-09-16</NgaySinh>
+        <GioiTinh>Nam</GioiTinh>
+        <MaPhong>CNTT</MaPhong>
+        <BangChamCong>
+            <ThoiGian>03/2023</ThoiGian>
+            <MaNV>NV001</MaNV>
+            <SoNgayCong>22</SoNgayCong>
+        </BangChamCong>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV002</MaNV>
+        <HoTen>Trần Thị B</HoTen>
+        <NgaySinh>1995-02-15</NgaySinh>
+        <GioiTinh>Nữ</GioiTinh>
+        <MaPhong>CNTT</MaPhong>
+        <BangChamCong>
+            <ThoiGian>03/2023</ThoiGian>
+            <MaNV>NV002</MaNV>
+            <SoNgayCong>21</SoNgayCong>
+        </BangChamCong>
+    </NhanVien>
+</PhongBan>

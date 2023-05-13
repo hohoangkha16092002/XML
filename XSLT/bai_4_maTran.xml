@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MATRAN xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="matran.xsd" dong="4" cot="3">
+    <DONG>
+        <COT>1</COT>
+        <COT>4</COT>
+        <COT>12</COT>
+    </DONG>
+    <DONG>
+        <COT>-23</COT>
+        <COT>7</COT>
+        <COT>50</COT>
+    </DONG>
+    <DONG>
+        <COT>4</COT>
+        <COT>0</COT>
+        <COT>25</COT>    
+    </DONG>
+    <DONG>
+        <COT>14</COT>
+        <COT>35</COT>
+        <COT>-5</COT>    
+    </DONG>
+</MATRAN>

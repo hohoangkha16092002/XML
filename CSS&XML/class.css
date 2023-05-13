@@ -1,0 +1,29 @@
+subjects {
+  display: block;
+  margin: 2em 1em;
+  border: 4px solid #cdf;
+  padding: 0px 1em;
+  background-color: silver;
+  width: 80%;
+}
+heading {
+  color: #0074d9;
+  font-size: 40px;
+  background-color: #ffdc00;
+  text-align: center;
+}
+subject {
+  color: grey;
+  background-color: #ff4136;
+}
+heading,
+name,
+teacher,
+credits {
+  display: block;
+}
+name {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SPECIALS SYSTEM "QLDia.dtd">
+<SPECIALS>
+    <TITLE>New Releases</TITLE>
+    <MESSAGE>Check out the latest CDs from our artists.</MESSAGE>
+    <CD>Xuân 2
+        <ARTIST>Ed Sheeran</ARTIST>
+        <PRICEUS>11.99</PRICEUS>
+        <PRICEVN>275000</PRICEVN>
+        <TRACK LENGTH="4:23">Shape of You</TRACK>
+        <TRACK LENGTH="4:18">Castle on the Hill</TRACK>
+        <TRACK LENGTH="3:01">Dive</TRACK>
+    </CD>
+    <CD>Ước mơ
+        <ARTIST>Beyoncé</ARTIST>
+        <PRICEUS>13.99</PRICEUS>
+        <PRICEVN>325000</PRICEVN>
+        <TRACK LENGTH="4:56">Pray You Catch Me</TRACK>
+        <TRACK LENGTH="3:41">Hold Up</TRACK>
+        <TRACK LENGTH="3:52">Don't Hurt Yourself</TRACK>
+    </CD>
+    <CD>Xuân 1
+        <ARTIST>Maroon 5</ARTIST>
+        <PRICEUS>12.99</PRICEUS>
+        <PRICEVN>300000</PRICEVN>
+        <TRACK LENGTH="3:37">What Lovers Do</TRACK>
+        <TRACK LENGTH="3:19">Wait</TRACK>
+        <TRACK LENGTH="3:08">Help Me Out</TRACK>
+    </CD>
+    <CD>A
+        <ARTIST>Kah</ARTIST>
+        <PRICEUS>99.99</PRICEUS>
+        <PRICEVN>999.999.999</PRICEVN>
+        <TRACK LENGTH="3:37">No Name</TRACK>
+        <TRACK LENGTH="3:19">Coming</TRACK>
+        <TRACK LENGTH="3:08">Suy</TRACK>
+    </CD>
+</SPECIALS>

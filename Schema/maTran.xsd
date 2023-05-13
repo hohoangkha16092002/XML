@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="MATRAN">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="DONG">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element form="qualified" maxOccurs="unbounded" name="COT"
+                                nillable="false"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute form="unqualified" name="dong" type="xs:int" use="optional"/>
+            <xs:attribute name="cot" type="xs:int"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

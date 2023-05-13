@@ -1,0 +1,28 @@
+* {
+    display: block;
+}
+
+products {
+    border: 3px solid blue;
+    width: 80%;
+    margin: 0 auto;
+}
+product:before { content: "Mã sản phẩm: " attr(id);}
+name:before  { content:" - Tên sản phẩm: ";}
+price:before  { content:" - Giá: ";}
+stock:before  { content:" - Số lượng: ";}
+country:before  { content:" - Nơi sản xuất: ";}
+
+product {
+  margin-bottom: 20px;
+}
+
+name {
+  color: blue;
+  text-decoration: underline;
+}
+
+price,stock,country {
+  color: black;
+  margin-left: 20px;
+}

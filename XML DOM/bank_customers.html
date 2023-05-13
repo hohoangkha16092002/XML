@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Customers</title>
+    </head>
+    <body>
+        <h1>Bank Customers</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Account Number</th>
+                    <th>Account Type</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="customer-table">
+            </tbody>
+        </table>
+        
+        <script>
+    // Load the XML file
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        displayCustomers(this);
+      }
+    };
+    xhttp.open("GET", "bank_customers.xml", true);
+    xhttp.send();
+    
+    // Display the customers in a table
+    function displayCustomers(xml) {
+      const xmlDoc = xml.responseXML;
+      const customers = xmlDoc.getElementsByTagName("customer");
+      let tableRows = "";
+      for (let i = 0; i < customers.length; i++) {
+        const name = customers[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        const accountNumber = customers[i].getElementsByTagName("account_number")[0].childNodes[0].nodeValue;
+        const accountType = customers[i].getElementsByTagName("account_type")[0].childNodes[0].nodeValue;
+        const balance = customers[i].getElementsByTagName("balance")[0].childNodes[0].nodeValue;
+        tableRows += "<tr><td>" + name + "</td><td>" + accountNumber + "</td><td>" + accountType + "</td><td>" + balance + "</td></tr>";
+      }
+      document.getElementById("customer-table").innerHTML = tableRows;
+    }
+  </script>
+    </body>
+</html>

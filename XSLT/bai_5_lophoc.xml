@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lophoc.xsl"?>
+<LopHoc>
+    <Lop>
+        <MaLop>61.TTQL</MaLop>
+        <TenLop>Thông tin quản lý K61</TenLop>
+    </Lop>
+    <Lop>
+        <MaLop>62.CNTT</MaLop>
+        <TenLop>Công nghệ thông tin K62</TenLop>
+    </Lop>
+    <Lop>
+        <MaLop>62.QTKD</MaLop>
+        <TenLop>Quản trị kinh doanh K62</TenLop>
+    </Lop>
+</LopHoc>
+
+ 
+ 

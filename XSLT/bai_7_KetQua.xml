@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSKQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/LEARN/XML/XSLT/bai_7_KetQua.xsd">
+    <KetQua>
+        <MaSinhVien>MaSinhVien0</MaSinhVien>
+        <MaMonHoc>MaMonHoc0</MaMonHoc>
+        <DiemThi>3</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSinhVien>MaSinhVien1</MaSinhVien>
+        <MaMonHoc>MaMonHoc1</MaMonHoc>
+        <DiemThi>5</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSinhVien>MaSinhVien3</MaSinhVien>
+        <MaMonHoc>MaMonHoc1</MaMonHoc>
+        <DiemThi>10</DiemThi>
+    </KetQua>
+</DSKQ>

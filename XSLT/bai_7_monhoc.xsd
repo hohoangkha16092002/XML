@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="DSMH">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="MonHoc">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaMonHoc" type="xs:string"/>
+                            <xs:element name="TenMonHoc" type="xs:string"/>
+                            <xs:element name="SoGio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="4"/>
+                                        <xs:maxInclusive value="48"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Key_MaMonHoc">
+            <xs:selector xpath="MonHoc"/>
+            <xs:field xpath="MaMonHoc"/>
+        </xs:key>
+    </xs:element>
+</xs:schema>

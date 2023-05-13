@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DOCUMENT SYSTEM "document_2.dtd">
+    
+<DOCUMENT>
+    <CUSTOMER TYPE = "Good">
+        <NAME>
+            <LAST_NAME> aaa </LAST_NAME>
+            <FIRST_NAME> bbb </FIRST_NAME>
+        </NAME>
+        <DATE> 31-01-2021 </DATE>
+        <ORDERS class="SanPham" discount="yes">
+            <ITEM>
+                <PRODUCT id="12">Oranges</PRODUCT>
+                <NUMBER>2</NUMBER>
+                <PRICE>15</PRICE>
+            </ITEM>
+            <ITEM>
+                <PRODUCT id="23">Tomatoes</PRODUCT>
+                <NUMBER>5</NUMBER>
+                <PRICE>3</PRICE>
+            </ITEM>
+        </ORDERS>
+    </CUSTOMER>
+</DOCUMENT>
+

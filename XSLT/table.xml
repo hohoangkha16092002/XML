@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="table.xsl"?>
+<employee>
+    <tuple>
+        <id>1</id>
+        <name>
+            <ln>Lee</ln>
+            <fn>Dongwon</fn>
+        </name>
+        <salary>500000</salary>
+        <manager>199</manager>
+        <birthyear>1980</birthyear>
+        <startyear>2002</startyear>
+    </tuple>
+    <tuple>
+        <id>2</id>
+        <name>
+            <ln>Luo</ln>
+            <fn>Robert</fn>
+        </name>
+    </tuple>
+</employee>

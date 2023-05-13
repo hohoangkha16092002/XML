@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hocsinh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="hocsinh.xsd" mahs="12345">
+    <hoTen>Ho Hoang Kha Ne Nhaa</hoTen>
+    <soDT>(094)123 4567</soDT>
+</hocsinh>

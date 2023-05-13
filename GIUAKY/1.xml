@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE session SYSTEM "1.dtd">
+<session>
+    <date>20/09/2023</date>
+    <chude>Họp tổ chức Fes</chude>
+    <nhom name="ABC">
+        <quanly>Tiến</quanly>
+        <siso></siso>
+        <ds_thamdu>
+            <sv status="NhomTruong">A</sv>
+            <sv status="NhomPho">B</sv>
+            <sv status="ThuKy">C</sv>
+        </ds_thamdu>
+    </nhom>
+    <nhom name="DEF">
+        <quanly>Kha</quanly>
+        <siso></siso>
+        <ds_thamdu>
+            <sv status="NhomTruong">D</sv>
+            <sv status="ThuKy">E</sv>
+        </ds_thamdu>
+    </nhom>
+</session>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bai_6_sinhvien.xsl"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="bai_6_sinhvien.xsd">
+    <SinhVien mssv ="62130808">
+        <TenSV>Hồ Hoàng Kha</TenSV> 
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>2002-09-16</NgaySinh>
+        <MaLop>CNTT01</MaLop>
+    </SinhVien> 
+    <SinhVien mssv ="62130823">
+        <TenSV>Hồ Đắc Tài</TenSV> 
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>1985-01-02</NgaySinh>
+        <MaLop>CTHH02</MaLop>
+    </SinhVien>
+    <SinhVien mssv ="61148304">
+        <TenSV>Bùi Thị Tú Nhi</TenSV> 
+        <GioiTinh>Nữ</GioiTinh>
+        <NgaySinh>1992-01-12</NgaySinh>
+        <MaLop>GVCN21</MaLop>
+    </SinhVien>
+</DSSV>

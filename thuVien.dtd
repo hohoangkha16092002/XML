@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT thuVien (sach+)>
+<!ELEMENT sach (id,ten,tacGia,(nhaXuatBan,gia)+)>
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT ten (#PCDATA) >
+<!ELEMENT tacGia (#PCDATA) >
+<!ELEMENT nhaXuatBan (#PCDATA) >
+<!ELEMENT gia (#PCDATA) >
+<!ATTLIST sach ngonNgu CDATA #IMPLIED 
+                theLoai (KhoaHoc|GiaiTri|TinHoc) #REQUIRED>
+<!ENTITY NXBT "Nhà Xuất Bản Trẻ" >
+<!ENTITY NXBGD "Nhà Xuất Bản Giáo Dục" >

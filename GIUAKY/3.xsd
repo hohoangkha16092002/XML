@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="document">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="lecturers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lecturer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lecturerID">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:pattern value="NV[0-9]{4}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="lecturerName" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="subjects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subject" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="subjectID">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:pattern value="[0-9]{7}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="subjectName" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="credit">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:int">
+                                                <xs:minInclusive value="0"/>
+                                                <xs:maxInclusive value="4"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="teaching">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="class"/>
+                            <xs:element name="lecturerID"/>
+                            <xs:element name="subjectID"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Key_lecturerID">
+            <xs:selector xpath="lecturers/lecturer"/>
+            <xs:field xpath="lecturerID"/>
+        </xs:key>
+        <xs:key name="Key_subjectID">
+            <xs:selector xpath="subjects/subject"/>
+            <xs:field xpath="subjectID"/>
+        </xs:key>
+        <xs:keyref name="newKeyref" refer="Key_lecturerID">
+            <xs:selector xpath="teaching"/>
+            <xs:field xpath="lecturerID"/>
+        </xs:keyref>
+        <xs:keyref name="newKeyref1" refer="Key_subjectID">
+            <xs:selector xpath="teaching"/>
+            <xs:field xpath="subjectID"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

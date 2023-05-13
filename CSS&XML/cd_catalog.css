@@ -1,0 +1,25 @@
+* {
+    display: block;
+}
+
+CATALOG {
+    border: 3px solid blue;
+    width: 80%;
+    margin: 0 auto;
+}
+
+CD:before  { content:" - ID: " attr(id_cd);}
+
+TITLE {
+    color: red;
+    font-size: 20px;
+}
+
+ARTIST {
+    color: blue;
+    font-size: 20px;
+}
+
+COUNTRY,COMPANY,PRICE,YEAR {
+    margin-left: 20px;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="file:/D:/LEARN/XML/SQL/sinhvien.xsd">
+    <row>
+        <STT>1</STT>
+        <Name>Hoang Kha</Name>
+        <Class>CNTT3</Class>
+    </row>
+    <row>
+        <STT>2</STT>
+        <Name>Minh Ti?n</Name>
+        <Class>CNTT3</Class>
+    </row>
+</root>

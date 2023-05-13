@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="SPECIALS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TITLE" type="xs:string"/>
+                <xs:element name="MESSAGE" type="xs:string"/>
+                <xs:element maxOccurs="unbounded" name="CD">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="ARTIST" type="xs:string"/>
+                            <xs:element name="PRICEUS" type="xs:decimal"/>
+                            <xs:element name="PRICEVN" type="xs:decimal"/>
+                            <xs:element maxOccurs="unbounded" name="TRACK">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="LENGTH" type="xs:string"
+                                                use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

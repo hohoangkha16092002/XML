@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhieuDiem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="phieudiem.xsd">
+    <HocSinh maHS="12345">
+        <HoTen>Ho Hoang Kha</HoTen>
+        <Lop>10A6</Lop>
+        <DiaChi>Tuy Hoa</DiaChi>
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>2002-09-16</NgaySinh>
+    </HocSinh>
+    <BangDiem>
+        <MonHoc>
+            <STT>1</STT>
+            <TenMon>TBHK1</TenMon>
+            <DiemHK1>10</DiemHK1>
+            <DiemHK2>10</DiemHK2>
+        </MonHoc>
+        
+        <MonHoc>
+            <STT>2</STT>
+            <TenMon>TBHK1</TenMon>
+            <DiemHK1>9</DiemHK1>
+            <DiemHK2>9</DiemHK2>
+        </MonHoc>
+
+        <MonHoc>
+            <STT>32</STT>
+            <TenMon>TBHK1</TenMon>
+            <DiemHK1>10</DiemHK1>
+            <DiemHK2>9</DiemHK2>
+        </MonHoc>
+        
+        <MonHoc>
+            <STT>3</STT>
+            <TenMon>TBHK1</TenMon>
+            <DiemHK1>8</DiemHK1>
+            <DiemHK2>8</DiemHK2>
+        </MonHoc>
+        
+        <MonHoc>
+            <STT>4</STT>
+            <TenMon>CCTC1</TenMon>
+            <DiemHK1>10</DiemHK1>
+            <DiemHK2>9</DiemHK2>
+        </MonHoc>
+    </BangDiem>
+</PhieuDiem>

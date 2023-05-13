@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="4.css"?>
+<products>
+    <product id="111" class="special">
+        <name>Kha</name>
+        <price>800</price>
+        <stock>4</stock>
+        <country>USA</country>
+    </product>
+    <product id="112" class="normal">
+        <name>Goolf</name>
+        <price>800</price>
+        <stock>4</stock>
+        <country>USA</country>
+    </product>
+    <product id="113" class="normal">
+        <name>Alpfa</name>
+        <price>800</price>
+        <stock>4</stock>
+        <country>USA</country>
+    </product>
+    <product id="114" class="special">
+        <name>Kha</name>
+        <price>800</price>
+        <stock>4</stock>
+        <country>USA</country>
+    </product>
+</products>

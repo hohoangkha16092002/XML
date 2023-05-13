@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist>
+    <book isbn= "111111" cat="fiction">
+        <title lang="chn">Harry Potter</title>
+        <price unit="us">79.99</price>
+    </book>
+    <book isbn='222222' cat="textbook">
+        <title lang="eng">Learning XML</title>
+        <price unit="us">69.95</price>
+    </book>
+    <book isbn="333333" cat="textbook">
+        <title lang="eng">Intro. to Databases</title>
+        <price unit="usd">39.00</price>
+    </book>
+    <book isbn="333123" cat="fiction">
+        <title lang="vn">Harry Potter</title>
+        <price unit="usd">75.00</price>
+    </book>
+</booklist>

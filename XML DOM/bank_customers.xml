@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bank_customers SYSTEM "bank_customers.dtd">
+<bank_customers>
+    <customer>
+        <name>Nguyễn Văn A</name>
+        <account_number>1234567890</account_number>
+        <account_type>Savings</account_type>
+        <balance>10000000</balance>
+    </customer>
+    <customer>
+        <name>Trần Thị B</name>
+        <account_number>0987654321</account_number>
+        <account_type>Checking</account_type>
+        <balance>50000000</balance>
+    </customer>
+    <customer>
+        <name>Lê Văn C</name>
+        <account_number>1357908642</account_number>
+        <account_type>Savings</account_type>
+        <balance>25000000</balance>
+    </customer>
+    <customer>
+        <name>Phạm Thị D</name>
+        <account_number>2468013579</account_number>
+        <account_type>Checking</account_type>
+        <balance>80000000</balance>
+    </customer>
+    <customer>
+        <name>Đặng Văn E</name>
+        <account_number>9876543210</account_number>
+        <account_type>Savings</account_type>
+        <balance>5000000</balance>
+    </customer>
+    <customer>
+        <name>Trần Văn F</name>
+        <account_number>4567890123</account_number>
+        <account_type>Checking</account_type>
+        <balance>15000000</balance>
+    </customer>
+    <customer>
+        <name>Nguyễn Thị G</name>
+        <account_number>7890123456</account_number>
+        <account_type>Savings</account_type>
+        <balance>30000000</balance>
+    </customer>
+    <customer>
+        <name>Lê Thị H</name>
+        <account_number>3698521470</account_number>
+        <account_type>Checking</account_type>
+        <balance>70000000</balance>
+    </customer>
+    <customer>
+        <name>Phạm Văn I</name>
+        <account_number>9517538642</account_number>
+        <account_type>Savings</account_type>
+        <balance>20000000</balance>
+    </customer>
+    <customer>
+        <name>Đặng Thị K</name>
+        <account_number>7531598642</account_number>
+        <account_type>Checking</account_type>
+        <balance>40000000</balance>
+    </customer>
+</bank_customers>

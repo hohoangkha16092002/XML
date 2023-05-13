@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="record.css"?>
+<Record>
+    <data>
+        <data-header> StudentId </data-header>
+        <data-header> Surname </data-header>
+        <data-header> Name </data-header>
+        <data-header> Course </data-header>
+    </data>
+    <data>
+        <data-cell> 00123 </data-cell>
+        <data-cell> Jack </data-cell>
+        <data-cell> Jim </data-cell>
+        <data-cell> BSc </data-cell>
+    </data>
+    <data>
+        <data-cell> 00124 </data-cell>
+        <data-cell> Jenny </data-cell>
+        <data-cell> Janet </data-cell>
+        <data-cell> Diploma </data-cell>
+    </data>
+</Record>

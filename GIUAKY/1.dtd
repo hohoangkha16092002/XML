@@ -1,0 +1,11 @@
+
+<!ELEMENT session (date, chude, nhom+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT chude (#PCDATA)>
+<!ELEMENT nhom (quanly, siso, ds_thamdu)>
+<!ATTLIST nhom name CDATA #REQUIRED>
+<!ELEMENT quanly (#PCDATA)>
+<!ELEMENT siso (#PCDATA)>
+<!ELEMENT ds_thamdu (sv+)>
+<!ELEMENT sv (#PCDATA)>
+<!ATTLIST sv status CDATA #REQUIRED>

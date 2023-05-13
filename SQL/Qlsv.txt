@@ -1,0 +1,33 @@
+SQL:
+CREATE TABLE HocSinh (
+    Ten VARCHAR(255),
+    MaHS CHAR(8) NOT NULL,
+    NgaySinh DATE,
+    GioiTinh ENUM('Nam', 'Nữ'),
+    DiaChi VARCHAR(255),
+    SDT VARCHAR(15),
+    MaLop CHAR(7) NOT NULL,
+    PRIMARY KEY (MaHS),
+    FOREIGN KEY (MaLop) REFERENCES Lop(MaLop)
+);
+
+CREATE TABLE Lop (
+    TenLop VARCHAR(255),
+    MaLop CHAR(7) NOT NULL,
+    GVCV VARCHAR(255),
+    PRIMARY KEY (MaLop)
+);
+
+CREATE TABLE Mon (
+    TenMon VARCHAR(255),
+    MaMon CHAR(6) NOT NULL,
+    PRIMARY KEY (MaMon)
+);
+
+CREATE TABLE KetQua (
+    MaHS CHAR(8) NOT NULL,
+    MaMon CHAR(6) NOT NULL,
+    Diem FLOAT,
+    FOREIGN KEY (MaHS) REFERENCES HocSinh(MaHS),
+    FOREIGN KEY (MaMon) REFERENCES Mon(MaMon)
+);

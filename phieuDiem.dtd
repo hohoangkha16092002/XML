@@ -1,0 +1,14 @@
+<!ELEMENT Phieudiem (HocSinh,BangDiem)>
+<!ELEMENT HocSinh (HoTen,Lop,DiaChi,GioiTinh,NgaySinh)>
+<!ELEMENT HoTen (#PCDATA)>
+<!ELEMENT Lop (#PCDATA)>
+<!ELEMENT DiaChi (#PCDATA)>
+<!ELEMENT GioiTinh (#PCDATA)>
+<!ELEMENT NgaySinh (#PCDATA)>
+<!ELEMENT BangDiem (MonHoc)+>
+<!ELEMENT MonHoc (STT,TenMon,DiemHK1,DiemHK2)>
+<!ELEMENT STT (#PCDATA)>
+<!ELEMENT TenMon (#PCDATA)>
+<!ELEMENT DiemHK1 (#PCDATA)>
+<!ELEMENT DiemHK2 (#PCDATA)> 
+<!ATTLIST HocSinh mahs ID #REQUIRED>

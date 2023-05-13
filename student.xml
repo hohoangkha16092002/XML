@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student>
+    <firstName>Ka</firstName>
+    <lastName>Ho</lastName>
+    <id>123</id>
+    <plan>
+        <courses year="2">
+            <course>
+                <name>C++</name>
+                <shortName>CPL</shortName>
+                <record>
+                    <grade>30</grade>
+                    <date>13/03/2020</date>
+                </record>
+            </course>
+            <course>
+                <name>Software Engineering</name>
+                <shortName>SE</shortName>
+            </course>
+        </courses>
+    </plan>
+    <note>Please contact <department>Information Technology</department> to get details.</note>
+</student>

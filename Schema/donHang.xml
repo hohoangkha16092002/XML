@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DonHang xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Schema_B5.xsd">
+    <MaKH>KH01</MaKH>
+    <TenKH>Nguyễn Văn A</TenKH>
+    <DiaChi>1 Nguyen Dinh Chieu</DiaChi>
+    <MatHang>
+        <MaMH>MH01</MaMH>
+        <TenMH>Sách giáo khoa lớp 1</TenMH>
+        <SoLuong>5</SoLuong>
+        <DonGia>20000</DonGia>
+    </MatHang>
+    <MatHang>
+        <MaMH>MH02</MaMH>
+        <TenMH>Bút mực đen</TenMH>
+        <SoLuong>10</SoLuong>
+        <DonGia>5000</DonGia>
+    </MatHang>
+</DonHang>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT bank_customers (customer+)>
+<!ELEMENT customer (name, account_number, account_type, balance)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT account_number (#PCDATA)>
+<!ELEMENT account_type (#PCDATA)>
+<!ELEMENT balance (#PCDATA)>
+

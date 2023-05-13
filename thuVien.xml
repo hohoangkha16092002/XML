@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE thuVien SYSTEM "thuVien.dtd">
+<thuVien xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="thuVien.xsd">
+    <sach theLoai="GiaiTri">
+        <id>001</id>
+        <ten>Mắt Biếc</ten>
+        <tacGia>Nguyễn Nhật Ánh</tacGia>
+        <nhaXuatBan>&NXBT;</nhaXuatBan>
+        <gia>100000</gia>
+    </sach>
+    <sach theLoai="TinHoc">
+        <id>002</id>
+        <ten>Công nghệ XML và ứng dụng</ten>
+        <tacGia>Phan Thị Thu Thủy</tacGia>
+        <nhaXuatBan>&NXBGD;</nhaXuatBan>
+        <gia>100000</gia>
+    </sach>
+</thuVien>

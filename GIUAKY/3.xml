@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="3.xsd">
+    <lecturers>
+        <lecturer>
+            <lecturerID>NV1231</lecturerID>
+            <lecturerName>Bui</lecturerName>
+        </lecturer>
+        <lecturer>
+            <lecturerID>NV1232</lecturerID>
+            <lecturerName>Tai</lecturerName>
+        </lecturer>
+    </lecturers>
+    <subjects>
+        <subject credit="1">
+            <subjectID>1234567</subjectID>
+            <subjectName>XML</subjectName>
+        </subject>
+        <subject credit="2">
+            <subjectID>8901234</subjectID>
+            <subjectName>OOP</subjectName>
+        </subject>
+    </subjects>
+    <teaching>
+        <class name="62cntt"></class>
+        <lecturerID>NV1232</lecturerID>
+        <subjectID>1234567</subjectID>
+    </teaching>
+    <teaching>
+        <class name="62ttql"></class>
+        <lecturerID>NV1232</lecturerID>
+        <subjectID>1234567</subjectID>
+    </teaching>
+</document>

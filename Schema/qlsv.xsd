@@ -1,0 +1,102 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="QLSV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sinh_vien" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="mssv" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ho_ten" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="lop" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="CTK28"/>
+                                        <xs:enumeration value="CTK28CD"/>
+                                        <xs:enumeration value="CTK29"/>
+                                        <xs:enumeration value="CTK29CD"/>
+                                        <xs:enumeration value="CTK30"/>
+                                        <xs:enumeration value="CTK30CD"/>
+                                        <xs:enumeration value="CTK31"/>
+                                        <xs:enumeration value="CTK31CD"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="mon_hoc" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ma_mon" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Za-z]{2}\d{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ten_mon" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="so_tin_chi" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ket_qua" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="mssv">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ma_mon">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Za-z]{2}\d{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="diem_thi">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:byte">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Key_mssv">
+            <xs:selector xpath="sinh_vien"/>
+            <xs:field xpath="mssv"/>
+        </xs:key>
+        <xs:key name="Key_maMonHoc">
+            <xs:selector xpath="mon_hoc"/>
+            <xs:field xpath="ma_mon"/>
+        </xs:key>
+        <xs:keyref name="SV_KeyRef" refer="Key_mssv">
+            <xs:selector xpath="ket_qua"/>
+            <xs:field xpath="mssv"/>
+        </xs:keyref>
+        <xs:keyref name="Key_maMon" refer="Key_maMonHoc">
+            <xs:selector xpath="ket_qua"/>
+            <xs:field xpath="ma_mon"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

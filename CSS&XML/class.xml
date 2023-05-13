@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="class.css"?>
+<subjects>
+    <heading>List of courses</heading>
+    <subject>
+        <name>Name: Computer Network</name>
+        <teacher>Teacher: Chris</teacher>
+        <credits>Credits: 3.0</credits>
+    </subject>
+    <subject>
+        <name>Name: Software Engineering</name>
+        <teacher>Teacher: S.K Jha</teacher>
+        <credits>Credits: 3.0</credits>
+    </subject>
+    <subject>
+        <name>Name: Machine Learning</name>
+        <teacher>Teacher: Sanjay</teacher>
+        <credits>Credits: 3.0</credits>
+    </subject>
+    <subject>
+        <name>Name: DBMS</name>
+        <teacher>Teacher: Aman Singh</teacher>
+        <credits>Credits: 4.0</credits>
+    </subject>
+    <subject>
+        <name>Name: Data Science</name>
+        <teacher>Teacher: Hitendra Dhakarey</teacher>
+        <credits>Credits: 4.0</credits>
+    </subject>
+</subjects>
