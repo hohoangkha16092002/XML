@@ -13,14 +13,6 @@
         <year>1985</year>
     </cd>
     <cd>
-        <title>Hide your heart</title>
-        <artist>Bonnie Tyler</artist>
-        <country>UK</country>
-        <company>CBS Records</company>
-        <price>9.90</price>
-        <year>1988</year>
-    </cd>
-    <cd>
         <title>Greatest Hits</title>
         <artist>Dolly Parton</artist>
         <country>USA</country>
@@ -28,4 +20,13 @@
         <price>9.90</price>
         <year>1982</year>
     </cd>
+    <cd>
+        <title>Hide your heart</title>
+        <artist>Bonnie Tyler</artist>
+        <country>UK</country>
+        <company>CBS Records</company>
+        <price>9.90</price>
+        <year>1988</year>
+    </cd>
+    
 </catalog>
